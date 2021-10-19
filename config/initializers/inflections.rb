@@ -1,7 +1,7 @@
 
 ActiveSupport::Inflector.inflections(:en) do |inflect|
 
-    inflect.irregular 'heros', 'heroes'
+    inflect.irregular 'hero', 'heroes'
 
  end
 
