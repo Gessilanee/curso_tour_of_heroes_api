@@ -1,9 +1,9 @@
-class HeroesController < ApplicationController
+class Api::HeroesController < ApplicationController
   before_action :set_heros, only: [:show, :update, :destroy]
 
   # GET /heroes
   def index
-    @heroes = Heros.all
+    @heroes = Heros.all.sorted_by_name
 
     render json: @heroes
   end
